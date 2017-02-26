@@ -1943,7 +1943,6 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
   font-family: "Playfair Display", "Times New Roman", serif;
   font-weight: 700;
-  text-transform: capitalize;
 }
 
 h1 {
