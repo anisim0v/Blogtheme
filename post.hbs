@@ -21,14 +21,14 @@
         <article class="{{post_class}}">
           <header class="entry-header">
             {{#author}}
-              <p class="entry-author">By <a href="{{url}}">{{name}}</a></p>
+              <p class="entry-author">Автор: <a href="{{url}}">{{name}}</a></p>
             {{/author}}
             <h1>{{title}}</h1>
             <time class="entry-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
           </header>
 
           <section class="entry-content">
-            <p class="entry-tags">{{tags prefix="On: "}}</p>
+            <p class="entry-tags">{{tags prefix="Теги: "}}</p>
             {{content}}
           </section>
         </article>
@@ -39,7 +39,7 @@
             <div class="column">
               {{#next_post}}
                 <div class="next">
-                  <p>Next story</p>
+                  <p>Следующий пост</p>
                   <h3><a href="{{url}}">{{title}}</a></h3>
                 </div>
               {{/next_post}}
@@ -48,7 +48,7 @@
             <div class="column">
               {{#prev_post}}
                 <div class="prev">
-                  <p>Previous story</p>
+                  <p>Предыдущий пост</p>
                   <h3><a href="{{url}}">{{title}}</a></h3>
                 </div>
               {{/prev_post}}
