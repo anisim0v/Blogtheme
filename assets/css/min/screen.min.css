@@ -5,15 +5,15 @@
 box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.37);
 }
 
-.post h2 a{
+.entry-content h2 a{
     color: #2e9fff !important;
     
 }
-.post h3 a{
+.entry-content h3 a{
     color: #2e9fff !important;
     
 }
-.post h4 a{
+.entry-content h4 a{
     color: #2e9fff !important;
     
 }
