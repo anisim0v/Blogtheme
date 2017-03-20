@@ -20,6 +20,7 @@
   <link rel="stylesheet" type="text/css" href="{{asset "css/min/pace.min.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "fonts/icons/icons.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/user.css"}}" />  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700' rel='stylesheet' type='text/css'>
 
   {{! Ghost outputs important style and meta data with this tag }}
@@ -54,7 +55,7 @@
   </div>
 
   {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   {{! Ghost outputs important scripts and data with this tag }}
   {{ghost_foot}}
 
