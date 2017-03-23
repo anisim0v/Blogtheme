@@ -5,13 +5,16 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- {{! Page Meta }} -->
+  {{! Page Meta }}
   <title>{{meta_title}}</title>
   <meta name="description" content="{{meta_description}}" />
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
+  {{! Ghost outputs important style and meta data with this tag }}
+  {{ghost_head}}
+  
   <link rel="apple-touch-icon" sizes="120x120" href="{{asset "/apple-touch-icon.png"}}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{asset "/favicon32.png"}}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{asset "/favicon16.png"}}">
@@ -19,7 +22,7 @@
   <link rel="mask-icon" href="{{asset "/safari-pinned-tab.svg"}}" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- {{! Styles'n'Scripts }} -->
+  {{! Styles'n'Scripts }}
   <link rel="stylesheet" type="text/css" href="{{asset "css/min/screen.min.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/min/animate.min.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/min/pace.min.css"}}" />
@@ -27,9 +30,6 @@
   <link rel="stylesheet" type="text/css" href="{{asset "css/user.css"}}" />  
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700' rel='stylesheet' type='text/css'>
-
-  {{! Ghost outputs important style and meta data with this tag }}
-  {{ghost_head}}
 </head>
 <body class="{{body_class}}">
 
