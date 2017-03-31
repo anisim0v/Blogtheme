@@ -1,0 +1,13 @@
+{
+    "name": "All-in-One Person",
+    "short_name": "All-in-One Person",
+    "icons": [{
+        "src": "/logo_192_by_192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }],
+    "start_url": "/",
+    "display": "standalone",
+    "gcm_sender_id": "988527783005",
+    "gcm_user_visible_only": true
+}
