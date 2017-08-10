@@ -9,9 +9,9 @@
 
   {{! Everything inside the #author tags pulls data from the author }}
   {{#author}}
-    {{#if cover}}
+    {{#if cover_image}}
       <section class="featured-image">
-        <img src="{{cover}}">
+        <img src="{{cover_image}}">
       </section>
     {{/if}}
   {{/author}}
@@ -21,8 +21,8 @@
       {{! Everything inside the #author tags pulls data from the author }}
       {{#author}}
         <section class="author-profile">
-          {{#if image}}
-            <div class="author-image" style="background-image: url({{image}})">Аватар: {{name}}</div>
+         {{#if profile_image}}
+            <div class="author-image" style="background-image: url({{img_url profile_image}})">Аватар: {{name}}</div>
           {{/if}}
           <h1 class="author-title">{{name}}</h1>
           {{#if bio}}
