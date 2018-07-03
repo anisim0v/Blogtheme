@@ -1,0 +1,47 @@
+ <html>
+<head>
+ 
+ <script type="text/javascript" src="/assets/js/payture.css"></script>
+ <link rel="stylesheet" type="text/css" href="/assets/css/payture.css">
+ </head>
+<body><button id="start_widget" onclick="openWidget()">pay</button>
+
+<!-- Функция openWidget может иметь такой вид -->
+function openWidget() {
+    var widget = new PaytureWidget({
+        Domain : "3",
+        Key : "Merchant_Widget",
+        Amount : 20,
+        Product : "Product",
+        CustomParams : 
+        {
+            Name : "Иван Иванов",
+            Delivery : "Самовывоз",
+        },
+        ChequeParams : 
+        {  
+            Positions:[  
+               {  
+                  Quantity: 1.000,
+                  Price: 10.00,
+                  Tax: 6,
+                  Text:"Булка"
+               },
+               {  
+                  Quantity : 2.000,
+                  Price : 5.00,
+                  Tax: 4,
+                  Text:"Спички"
+               }
+            ],
+            CheckClose: {  
+               TaxationSystem : 0
+            },
+            CustomerContact : "",
+            Message:"Чек Payture"
+        }, 
+
+        OnTransactionCompleted : function() { alert( widget.GetTransactionSuccess() );  }
+    });
+}</body>
+ 
