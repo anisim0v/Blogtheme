@@ -6,7 +6,7 @@
  </head>
 <body><button id="start_widget" onclick="openWidget()">pay</button>
 
-<!-- Функция openWidget может иметь такой вид -->
+<script>
 function openWidget() {
     var widget = new PaytureWidget({
         Domain : "3",
@@ -43,5 +43,7 @@ function openWidget() {
 
         OnTransactionCompleted : function() { alert( widget.GetTransactionSuccess() );  }
     });
-}</body>
+}
+</script>
+</body>
  
