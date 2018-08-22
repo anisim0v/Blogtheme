@@ -1993,7 +1993,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 }
 
 .kg-image-card {textalign:center}
-.kg-width-wide, .kg-width-ful {width:auto}
+.kg-width-wide, .kg-width-full {width:auto}
 
 @media (min-width: 40rem) {
   h1 {
